@@ -1,6 +1,7 @@
 # Cordova Recaptcha Enterprise Plugin
 
-This is a cordova plugin for Google reCAPTCHA Enterprise.
+This is a cordova plugin for Google reCAPTCHA Ente
+rprise.
 
 ## Installation
 ```
@@ -12,7 +13,7 @@ cordova plugin add https://github.com/Junker/cordova-plugin-recaptcha-enterprise
 ```
 window.plugins.recaptcha.initialize('key', 10000, 
                                     () => console.log('reCAPTCHA initialized!'),
-									err => console.error(err));
+                                    err => console.error(err));
 
 window.plugins.recaptcha.execSignup(10000, 
                                     token => console.log('Token received:'+token), 
