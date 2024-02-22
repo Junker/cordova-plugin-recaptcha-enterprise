@@ -10,7 +10,7 @@ cordova plugin add https://github.com/Junker/cordova-plugin-recaptcha-enterprise
 
 ## Usage
 
-```
+```javascript
 window.plugins.recaptcha.initialize('key', 10000, 
                                     () => console.log('reCAPTCHA initialized!'),
                                     err => console.error(err));
