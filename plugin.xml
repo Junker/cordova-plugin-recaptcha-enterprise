@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-plugin-recaptcha" version="0.1.0">
+    <engines>
+      <engine name="cordova-android" version=">=6.0.0" />
+    </engines>
+    <name>Cordova Recaptcha Enterprise</name>
+    <description>A cordova plugin for the reCAPTCHA Enterprise API</description>
+    <author>Dmitrii Kosenkov</author>
+    <license>MIT</license>
+    <keywords>recaptcha</keywords>
+    <js-module src="www/recaptcha.js" name="recaptcha">
+        <clobbers target="plugins.recaptcha" />
+    </js-module>
+    <platform name="android">
+        <framework src="com.google.android.recaptcha:recaptcha:18.2.+" />
+
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Recaptcha">
+                <param name="android-package" value="org.junker.recaptcha.Recaptcha" />
+            </feature>
+        </config-file>
+        
+        <source-file src="src/android/Recaptcha.java" target-dir="src/org/junker/recaptcha" />
+    </platform>
+</plugin>
