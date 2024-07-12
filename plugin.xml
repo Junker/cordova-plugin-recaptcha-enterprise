@@ -13,7 +13,7 @@
         <clobbers target="plugins.recaptcha" />
     </js-module>
     <platform name="android">
-        <framework src="com.google.android.recaptcha:recaptcha:18.2.+" />
+        <framework src="com.google.android.recaptcha:recaptcha:18.5.+" />
 
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="Recaptcha">
