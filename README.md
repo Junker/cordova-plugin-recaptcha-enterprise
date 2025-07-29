@@ -1,7 +1,6 @@
 # Cordova Recaptcha Enterprise Plugin
 
-This is a cordova plugin for Google reCAPTCHA Ente
-rprise.
+This is a cordova plugin for Google reCAPTCHA Enterprise.
 
 ## Installation
 ```
